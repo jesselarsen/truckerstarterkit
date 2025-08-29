@@ -1,2 +1,2 @@
 # TruckerStarterKit.com
-Essential gear for truckers
+Essential tools equipment for truckers
