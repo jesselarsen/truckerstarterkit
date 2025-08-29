@@ -1,2 +1,2 @@
-# truckerstarterkit
-truckerstarterkit.com
+# TruckerStarterKit.com
+Essential gear for truckers
