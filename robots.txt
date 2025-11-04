@@ -1,0 +1,4 @@
+User-agent: *
+   Allow: /
+   
+   Sitemap: https://truckerstarterkit.com/sitemap.xml
