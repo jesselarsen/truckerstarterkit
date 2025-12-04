@@ -1,4 +1,3 @@
 User-agent: *
-   Allow: /
-   
-   Sitemap: https://truckerstarterkit.com/sitemap.xml
+Allow: /
+Sitemap: https://truckerstarterkit.com/sitemap.xml
