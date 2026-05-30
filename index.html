@@ -204,12 +204,14 @@
         }
 
         .product-card:hover .btn-add-cart {
-            background: linear-gradient(135deg, #cc7000 0%, #b36200 100%);
+            background: linear-gradient(135deg, #FFA733 0%, #FF9500 100%);
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
         }
 
-        .product-card:active .btn-add-cart {
+        .product-card:active .btn-add-cart,
+        .btn-add-cart:active {
+            background: linear-gradient(135deg, #cc7000 0%, #b36200 100%);
             transform: scale(0.98);
         }
 
