@@ -158,19 +158,24 @@
             background: linear-gradient(135deg, #FF8C00 0%, #e67e00 100%);
             color: white;
             border: none;
-            padding: 15px 35px;
+            /* Reduced horizontal padding to give text more breathing room */
+            padding: 15px 10px; 
             font-family: 'DM Sans', serif;
-            font-size: 1.1em;
+            /* Slightly smaller font size to prevent wrapping */
+            font-size: 1.05em; 
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            /* Added word-break to ensure long phrases don't overflow */
+            word-break: break-word; 
             box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
-            width: 100%;
-            display: block;
+            width: 90%; /* Changed from 100% to create a cleaner visual margin */
+            margin: auto auto 15px auto; /* Centers the button and adds bottom spacing */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            margin-top: auto; /* Pushes the button to the bottom of the card */
         }
 
         .product-card:hover .btn-add-cart {
