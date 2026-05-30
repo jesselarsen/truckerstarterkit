@@ -1,1 +1,39 @@
 # .gitignore config below
+
+# Dependencies and Node tooling (image processing only, not part of the site)
+node_modules/
+package.json
+package-lock.json
+
+# Source images (uploaded to R2, not committed to repo)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.avif
+
+# Local working files
+tsk.html
+tsk-updated.html
+image-processing/
+images/
+output/
+tmp/
+archive/
+compressed webp/
+
+# Build artifacts & misc
+favicon-package.zip
+*.txt
+*.py
+*.ps1
+*.base64
+
+# Local tool & asset folders
+.claude/
+Audible_Logos/
+icons/
+
+# Logs
+*.log
