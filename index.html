@@ -264,54 +264,48 @@
         }
 
         .about-curator {
-            background-color: #f8f9fa; /* Slight off-white to separate it from the main white background */
             padding: 3rem 1rem;
             border-bottom: 2px solid #e0e0e0;
         }
 
-        .curator-container {
+        .curator-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             max-width: 900px;
             margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 2.5rem;
         }
-        
-        .curator-image img {
-            border-radius: 12px; /* Soft rectangle corners to match product cards */
-            width: 100%;
-            max-width: 350px; /* Allows the image to be larger and responsive */
-            height: auto; /* Maintains the natural aspect ratio of the photo */
-            object-fit: cover;
-            border: 4px solid #1B365D; 
-            box-shadow: 0 12px 25px rgba(0,0,0,0.3); /* Stronger drop shadow */
+
+        .curator-card-body {
+            padding: 30px;
+            overflow: hidden;
         }
-        
-        .curator-content h2 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
-            margin-top: 0;
-        }
-        
-        .curator-content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+
+        .curator-card-body p {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 1.05em;
+            line-height: 1.8;
             color: #555;
             margin-bottom: 1rem;
         }
-        
-        /* Mobile Responsiveness */
+
+        .curator-card-img {
+            float: left;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 25px 10px 0;
+            border: 3px solid #1B365D;
+            outline: thin solid #333;
+        }
+
         @media (max-width: 768px) {
-            .curator-container {
-                flex-direction: column;
-                text-align: center;
-                gap: 1.5rem;
-            }
-            
-            .curator-image img {
-                width: 150px;
-                height: 150px;
+            .curator-card-img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
             }
         }
     </style>
@@ -591,17 +585,15 @@
     <!-- Main Content -->
     <!-- Curator -->
     <section class="about-curator">
-    <div class="curator-container">
-        <div class="curator-image">
-            <img src="TSK-avatar.jpg" alt="Professional Class A CDL Driver" loading="lazy" width="300" height="300">
-        </div>
-        <div class="curator-content">
-            <h2>Curated by an Over-The-Road Veteran</h2>
-            <p>Trial and error on the road is expensive and exhausting. That is why every item in this starter kit was hand-picked by a professional Class A CDL driver with years of OTR experience.</p>
-            <p>These aren't just highly-rated gadgets; they are road-tested essentials proven to survive the daily grind and turn grueling miles into manageable comfort.</p>
-        </div>
-    </div>
-</section>
+        <article class="curator-card">
+            <div class="section-heading">Curated by an Over-The-Road Veteran</div>
+            <div class="curator-card-body">
+                <img src="TSK-avatar.jpg" alt="Professional Class A CDL Driver" class="curator-card-img" loading="lazy">
+                <p>Trial and error on the road is expensive and exhausting. That is why every item in this starter kit was hand-picked by a professional Class A CDL driver with years of OTR experience.</p>
+                <p>These aren't just highly-rated gadgets; they are road-tested essentials proven to survive the daily grind and turn grueling miles into manageable comfort.</p>
+            </div>
+        </article>
+    </section>
     
     <div class="container">
         <h2 style="text-align: center; font-family: 'DM Sans', sans-serif; font-size: 1.8em; color: #1B365D; margin-bottom: 20px;">The Complete Truck Driver Starter Pack for New & Experienced Drivers</h2>
