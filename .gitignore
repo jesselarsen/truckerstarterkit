@@ -34,6 +34,8 @@ favicon-package.zip
 .claude/
 Audible_Logos/
 icons/
+.wrangler/
+image storage/
 
 # Logs
 *.log
